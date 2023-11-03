@@ -979,7 +979,7 @@ body {
 }
 
 .no-webp .footer{
-  background: url("../img/comfort/Rectangle.png"); }
+  background: url("../img/bg/Rectangle.png"); }
 
 .footer {
   background-size: 100% 100%;
@@ -3914,7 +3914,7 @@ body {
   }
 }
 
-.webp .footer{ background: url(../img/comfort/Rectangle.webp); }
+.webp .footer{ background: url(../img/bg/Rectangle.webp); }
 
 .webp .first::before{ background: url(../img/bg/room.webp) no-repeat; }
 

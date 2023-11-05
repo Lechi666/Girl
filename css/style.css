@@ -978,9 +978,6 @@ body {
   display: none;
 }
 
-.no-webp .footer{
-  background: url("../img/bg/Rectangle.png"); }
-
 .footer {
   background-size: 100% 100%;
 }
@@ -1058,8 +1055,7 @@ body {
 }
 
 .footer__tel {
-  color: rgb(43, 65, 106);
-  font-size: 27px;
+  color: #fff;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
@@ -1086,7 +1082,7 @@ body {
 }
 
 .footer__link {
-  color: rgb(43, 65, 106);
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1097,7 +1093,7 @@ body {
 
 .footer__text {
   text-align: center;
-  color: #6E6E6E;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -1115,6 +1111,7 @@ body {
   width: 100%;
   height: 100%;
   top: -10%;
+  z-index: -1;
 }
 
 .first__container {
@@ -1226,6 +1223,7 @@ body {
   height: 100%;
   left: 40%;
   top: -5%;
+  z-index: -1;
 }
 
 .comfort__container {
@@ -1295,7 +1293,7 @@ body {
 
 .utem-comfort_carte {
   border-radius: 24px;
-  background: #4F4F4F;
+  background: #9da4e6;
   opacity: 0;
 }
 
@@ -1306,7 +1304,7 @@ body {
 
 .utem-comfort_zone {
   border-radius: 24px;
-  background: #EAECEF;
+  background: #a0d0e6;
   opacity: 0;
 }
 
@@ -1317,7 +1315,7 @@ body {
 
 .utem-comfort_car {
   border-radius: 24px;
-  background: rgba(239, 234, 187, 0.6);
+  background: #a0d0e6;
   opacity: 0;
 }
 
@@ -1328,7 +1326,7 @@ body {
 
 .utem-comfort_kitchen {
   border-radius: 24px;
-  background: #EEE9E8;
+  background: #90b7c9;
   opacity: 0;
 }
 
@@ -1339,7 +1337,7 @@ body {
 
 .utem-comfort_clean {
   border-radius: 24px;
-  background: #FFF9C1;
+  background: #d7dcff;
   opacity: 0;
 }
 
@@ -1389,11 +1387,11 @@ body {
 }
 
 .utem-comfort__image-ibg_kitchen {
-  padding-bottom: 88.6120996441%;
+  padding-bottom: 95.4022988506%;
 }
 
 .utem-comfort__image-ibg_clean {
-  padding-bottom: 69.8795180723%;
+  padding-bottom: 108.5308056872%;
 }
 
 .price {
@@ -1565,6 +1563,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: contain;
+  z-index: -1;
 }
 
 .for__container {
@@ -1838,6 +1837,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
   top: 0;
 }
 
@@ -1896,6 +1896,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
   top: -30%;
 }
 
@@ -1977,6 +1978,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
   background-size: contain;
   top: 0%;
   left: 20%;
@@ -2267,9 +2269,10 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200%;
   background-size: cover;
   top: -30%;
+  z-index: -1;
 }
 
 .action__container {
@@ -3018,6 +3021,10 @@ body {
     margin-left: 1.875rem;
   }
 
+  .footer__tel {
+    font-size: 1.5625rem;
+  }
+
   .info-first__title {
     font-size: 3.8125rem;
   }
@@ -3470,6 +3477,9 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 200px;
             flex: 1 1 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .footer__logo {
@@ -3558,6 +3568,10 @@ body {
 @media (max-width: 48.625em) {
   .header__logo {
     margin-left: 0.3125rem;
+  }
+
+  .footer__tel {
+    font-size: 1.25rem;
   }
 
   .info-first__title {
@@ -3832,6 +3846,10 @@ body {
     margin-left: clamp( 0.3125rem , -0.6888385502rem  +  2.0593080725vw , 1.875rem );
   }
 
+  .footer__tel {
+    font-size: clamp( 1.25rem , 1.04973229rem  +  0.4118616145vw , 1.5625rem );
+  }
+
   .info-first__title {
     font-size: clamp( 1.875rem , 0.6333401977rem  +  2.5535420099vw , 3.8125rem );
   }
@@ -3905,6 +3923,12 @@ body {
     transition: all ease 0.3s;
   }
 
+  .header__logo:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+
   .menu__link:hover {
     font-weight: 700;
   }
@@ -3912,9 +3936,67 @@ body {
   .contact-header__tel:hover {
     font-weight: 700;
   }
-}
 
-.webp .footer{ background: url(../img/bg/Rectangle.webp); }
+  .footer__logo:hover {
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+
+  .footer__instagram:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .footer__viber:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .footer__tel:hover {
+    font-weight: 600;
+  }
+
+  .footer__link:hover {
+    font-weight: 600;
+  }
+
+  .utem-price:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+
+  .image-for__item:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+
+  .item-plus:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+
+  .table-contact__tel:hover {
+    font-weight: 600;
+  }
+
+  .table-contact__instagram:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .table-contact__viber:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
 
 .webp .first::before{ background: url(../img/bg/room.webp) no-repeat; }
 
